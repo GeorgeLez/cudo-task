@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div class="title"></div>
-    <div class="doc">
+    <div>
       <button @click="retrieveRandomPhotoAlbum">Spin up the API</button>
-      <button @click="$router.push('/')">To the Landing page</button>
+      <button class="alt" @click="$router.push('/')">To the Landing page</button>
     </div>
     <div v-if="loading" class="loader">
     </div>

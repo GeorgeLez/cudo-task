@@ -1,20 +1,17 @@
 <template>
-  <div id="wrapper" class="doc">
+  <div id="wrapper">
     <img id="logo" src="~@/assets/logo.png" alt="electron-vue">
     <div class="title">Welcome to my first Electron project!</div>
     <div class="subtitle">Built by George for Cudo.</div>
-    <div class="doc">
+    <div>
       <button @click="$router.push('random-album')">To the API</button>
     </div>
   </div>
 </template>
 
 <script>
-  import RandomAlbum from './RandomAlbum'
-
   export default {
-    name: 'landing-page',
-    components: { RandomAlbum },
+    name: 'landing-page'
   }
 </script>
 
@@ -60,12 +57,7 @@
     margin-bottom: 10px;
   }
 
-  .doc p {
-    color: black;
-    margin-bottom: 10px;
-  }
-
-  .doc button {
+  button {
     font-size: .8em;
     cursor: pointer;
     outline: none;
@@ -79,7 +71,7 @@
     border: 1px solid #4fc08d;
   }
 
-  .doc button.alt {
+  button.alt {
     color: #42b983;
     background-color: transparent;
   }
