@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper">
-    <img id="logo" src="~@/assets/logo.png" alt="electron-vue">
-    <div class="title">Welcome to my first Electron project!</div>
+    <img id="logo_img" src="https://www.cudocompute.com/wp-content/themes/cudo-compute/static/img/logo.svg" alt="cudo-logo">
+    <div class="title">Welcome to my first Electron-Vue project!</div>
     <div class="subtitle">Built by George for Cudo.</div>
     <div>
       <button @click="$router.push('random-album')">To the API</button>
@@ -38,10 +38,12 @@
     padding: 60px 80px;
   }
 
-  #logo {
+  #logo_img {
     height: auto;
     margin-bottom: 20px;
-    width: 420px;
+    max-width: 155px;
+    background-color: #181818;
+    padding: 12px 16px;
   }
 
   .title {
